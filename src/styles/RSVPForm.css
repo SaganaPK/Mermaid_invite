@@ -1,0 +1,101 @@
+/* Basic styles for RSVP form */
+.rsvp-form {
+    background-color: #E0FFFF; /* Light pastel background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
+  }
+  
+  .rsvp-form h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .rsvp-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+  }
+  
+  .rsvp-form input, 
+  .rsvp-form select, 
+  .rsvp-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
+  }
+  
+  .rsvp-form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px;
+  }
+  
+  .rsvp-form button {
+    background-color: #FFDAB9; /* Button color */
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .rsvp-form button:hover {
+    background-color: #0077aa; /* Darker button color on hover */
+  }
+  
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #77DD77; /* Match your theme */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+  
+  .home-button:hover {
+    background-color: #00ccff; /* Highlight color */
+  }
+  
+
+  /* Media query for mobile screens */
+  @media (max-width: 600px) {
+    .rsvp-form {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    .rsvp-form h3 {
+      font-size: 1.5em;
+    }
+  
+    .rsvp-form label {
+      font-size: 1em;
+    }
+  
+    .rsvp-form input, 
+    .rsvp-form select, 
+    .rsvp-form textarea {
+      font-size: 0.9em;
+      padding: 8px;
+    }
+  
+    .rsvp-form button {
+      font-size: 1em;
+      padding: 8px 16px;
+    }
+  }
+  

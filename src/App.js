@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Mermaid from './component/Mermaid';
+import RSVPForm from './component/RSVPForm';
+import MessagePage from './component/MessagePage';
+import AddressPage from './component/AddressPage';
+import DatePage from './component/DatePage';
+import NoAttendMessage from './component/NoAttendMessage'; // Import the new page
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Mermaid />} />
+          <Route path="/rsvp" element={<RSVPForm />} />
+          <Route path="/message" element={<MessagePage />} />
+          <Route path="/address" element={<AddressPage />} />
+          <Route path="/date" element={<DatePage />} />
+          <Route path="/no-attend" element={<NoAttendMessage />} /> {/* New route */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

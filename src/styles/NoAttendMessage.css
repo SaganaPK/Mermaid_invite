@@ -1,0 +1,35 @@
+.no-attend-message-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f8ff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .no-attend-message-container h2 {
+    font-size: 2.5rem;
+    color: #2e8b57;
+  }
+  
+  .no-attend-message-container p {
+    font-size: 1.5rem;
+    color: #555;
+    margin: 20px 0;
+  }
+  
+  .home-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .home-button:hover {
+    background-color: #ff4500;
+  }
+  

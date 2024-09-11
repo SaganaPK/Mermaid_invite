@@ -1,0 +1,41 @@
+/* Container for the entire page */
+.date-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #e0f7fa; /* Pastel background color */
+    padding: 20px;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Center the content */
+  .date-content {
+    z-index: 2; /* Ensure the content is above the GIF */
+    margin-bottom: 20px;
+  }
+  
+  /* Style the GIF */
+  .bottom-gif {
+    width: 30%; /* Adjust percentage to control GIF size dynamically */
+    position: absolute;
+    bottom: 0; /* Stick to the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Make sure the GIF is below the content */
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 600px) {
+    .date-content {
+      font-size: 1em;
+    }
+  
+    .bottom-gif {
+      width: 50%; /* Larger size for mobile view */
+      bottom: 10px; /* Adjust position for smaller screens */
+    }
+  }
+  
